@@ -1,11 +1,12 @@
 <?php
 
 $position = strpos($argv[1], "s");
-if ($position === false){
-    exit("Geen tijd gevonden!");
+if ($position == true){
+    echo (int)$argv[1] . "seconden";
     
 } else {
-    echo (int)$argv[1] . "seconden";
+ exit("Geen tijd gevonden!");
+    
 }
 
 ?>
